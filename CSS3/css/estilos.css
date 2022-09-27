@@ -1,0 +1,112 @@
+/* selector { se llama regla
+    propiedad: valor;
+    propiedad2: valor;
+    propiedad3: valor
+} */
+
+/*TIPOS DE SELECTORES: 
+    -Básicos
+    -Combinadores
+    -Pseudo-elementos
+    -Pseudo-clases*/
+
+/*******SELECTORES BASICOS: 
+    etiquetas, clases, id, universal y atributos*/
+
+/*Etiquetas*/
+h1 { 
+    color: red;
+}
+
+/*Clases*/
+.titulo {
+   color: blue; 
+}
+
+/*id*/
+#parrafo {
+    color: green;
+}
+
+/*Universal*/
+* {
+  margin: 0;  
+}
+
+/*Atributos*/
+/*Seleccionando los elementos que tengan ese atributo*/
+[href] {
+    color: red;
+}
+
+/*Seleccionando los elementos que tengan ese atributo
+y ese valor*/
+[href="#"] {
+    color: green;
+}
+
+/*Seleccionando los elementos que tengan ese atributo
+y ese valor al menos una vez*/
+[class~="verde"] {
+    color: purple;
+}
+
+/*Seleccionando los elementos que tengan ese atributo
+y tenga exactamente ese valor o empiece por ese valor
+seguido de un guión*/
+[class|="verde"] {
+    color: red;
+}
+
+/*Seleccionando los elementos que tengan ese atributo
+y empezar por ese valor*/
+[class^="verde"] {
+    color: blue;
+}
+
+/*Seleccionando los elementos que tengan ese atributo
+y terminar con ese valor*/
+[class$="rojo"] {
+    color: red;
+}
+
+/*Seleccionando los elementos que tengan ese atributo
+y debe contener ese valor*/
+[class*="rojo"] {
+    color: green;
+}
+
+/****************************/
+/***SELECTORES COMBINADORES: 
+    -hermano adyacente, hermano general,
+    descendentes y hijo directo*/
+
+/*Hermano adyacente, selecciona el hermano que este 
+    debajo de este, hermano inferior*/
+    h1 + h2{
+        color: blueviolet;
+    }
+
+/*Hermano general, selecciona a todos los hermanos
+    inferiores y compartan el mismo padre*/
+    h1 ~ h3 {
+        color: green;
+    }
+
+/*Descendente, aplica estilo a todos los elementos que
+estan dentro de este*/
+    div p {
+        color: palevioletred;
+    }
+
+/*Hijo directo, busca una relación directo*/
+div > p {
+    color:brown;
+}
+
+
+
+
+
+
+
